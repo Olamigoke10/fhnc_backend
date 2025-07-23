@@ -1,2 +1,88 @@
-env
+# Python
+__pycache__/
+*/__pycache__
+**/__pycache__
+*.py[cod]
+*$py.class
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# Django static/media
+/static/
+/media/
+/staticfiles/
+/assets/
+
+# Environment
+.env
+.env.*
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Migrations (optional - if generated automatically and not shared)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyCharm
+.idea/
+
+# Build
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node (if using Webpack or Tailwind)
+node_modules/
+npm-debug.log
+yarn-error.log
+
 requirements.txt
