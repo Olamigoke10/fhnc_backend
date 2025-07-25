@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-h$w+vak0-=4j$*z1^1wi#+l7rr(zh&f48vrtaddc59pmxnyz*6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://fhnc-backend.onrender.com/'
+]
 
 
 
