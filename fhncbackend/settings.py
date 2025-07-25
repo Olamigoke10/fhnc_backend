@@ -154,3 +154,6 @@ SIMPLE_JWT = {
 }
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+
+CORS_ALLOW_ALL_ORIGINS = True
