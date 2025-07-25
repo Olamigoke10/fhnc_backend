@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+from cloudinary.models import CloudinaryField
 
 User = get_user_model()
 
@@ -8,7 +9,7 @@ class Post(models.Model):
     slug = models.SlugField(unique=True)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
-    image = models.ImageField(upload_to='blog_images/', blank=True, null=True)
+    image = CloudinaryField('image', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     published = models.BooleanField(default=False)
