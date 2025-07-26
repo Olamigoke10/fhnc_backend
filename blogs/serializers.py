@@ -13,6 +13,7 @@ class PostSerializer(serializers.ModelSerializer):
     author = serializers.StringRelatedField()
     total_likes = serializers.IntegerField(read_only=True)
     comments = CommentSerializer(many=True, read_only=True)
+    image = serializers.ImageField(use_url=True)
     
     class Meta:
         model = Post
