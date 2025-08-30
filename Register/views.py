@@ -9,7 +9,7 @@ from rest_framework.permissions import AllowAny
 # Create your views here.
 
 class CourseListview(generics.ListAPIView):
-    queryser = Course.objects.all()
+    queryset = Course.objects.all()
     serializer_class = CourseSeraializer
     permission_classes = [AllowAny]  
 
