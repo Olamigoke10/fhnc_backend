@@ -32,9 +32,13 @@ SECRET_KEY = 'django-insecure-h$w+vak0-=4j$*z1^1wi#+l7rr(zh&f48vrtaddc59pmxnyz*6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'fhnc-backend.onrender.com'
-]
+# ALLOWED_HOSTS = [
+#     '*'
+#     # 'fhnc-backend.onrender.com'
+# ]
+
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+
 
 
 # Application definition
@@ -53,7 +57,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'drf_spectacular',
     'accounts',
-    'blogs'
+    'blogs',
+    'Register'
 ]
 
 MIDDLEWARE = [
