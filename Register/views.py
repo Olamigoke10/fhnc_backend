@@ -16,3 +16,4 @@ class CourseListview(generics.ListAPIView):
 class RegistrationCreateView(generics.CreateAPIView):
     queryset = Registration.objects.all()
     serializer_class = RegistrationSerializers
+    permission_classes = [AllowAny]
