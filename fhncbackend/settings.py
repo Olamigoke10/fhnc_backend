@@ -78,7 +78,7 @@ ROOT_URLCONF = 'fhncbackend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        "DIRS": [BASE_DIR / "frontend/build"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -159,6 +159,11 @@ cloudinary.config(
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Add React build static
+STATICFILES_DIRS = [
+    BASE_DIR / "frontend/build/static",
+]
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / 'media'

@@ -32,6 +32,7 @@ urlpatterns = [
     path('api/auth/', include('accounts.urls')),
     path('api/blogs/', include('blogs.urls')),
     path('api/Register/', include('Register.urls'))
+    re_path(r"^.*$", TemplateView.as_view(template_name="index.html")), 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
