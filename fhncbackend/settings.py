@@ -78,7 +78,7 @@ ROOT_URLCONF = 'fhncbackend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        "DIRS": [BASE_DIR / "frontend/build"],
+        "DIRS": [BASE_DIR / "frontend/dist"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -162,7 +162,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Add React build static
 STATICFILES_DIRS = [
-    BASE_DIR / "frontend/build/static",
+    BASE_DIR / "frontend/dist/assets",
 ]
 
 MEDIA_URL = "/media/"
